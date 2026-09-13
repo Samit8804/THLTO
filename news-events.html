@@ -3,25 +3,395 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>News &amp; Events | THLTO</title>
+
+    <title>News & Events | THLTO</title>
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
+
   <body>
+    <!-- =========================================
+     NAVBAR
+========================================= -->
+
     <header class="navbar">
-      <a href="index.html" class="logo"
-        ><img src="images/logo.png" alt="THLTO"
-      /></a>
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="THLTO Logo" />
+      </a>
+
       <nav class="nav-menu">
-        <a href="index.html">HOME</a><a href="about.html">ABOUT US</a
-        ><a href="services.html">SERVICES</a
-        ><a href="destinations.html">DESTINATIONS</a
-        ><a href="news-events.html" class="active">NEWS &amp; EVENTS</a
-        ><a href="contact.html">CONTACT US</a>
+        <a href="index.html">HOME</a>
+
+        <a href="about.html">ABOUT US</a>
+
+        <a href="services.html">SERVICES</a>
+
+        <a href="destinations.html">DESTINATIONS</a>
+
+        <a href="news-events.html" class="active"> NEWS & EVENTS </a>
+
+        <a href="contact.html">CONTACT US</a>
       </nav>
+
+      <a href="contact.html" class="nav-contact-btn"> GET IN TOUCH </a>
+
+      <button class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
-    <main>
-      <h1>News &amp; Events</h1>
-      <p>Keep up with THLTO initiatives, local stories, and upcoming events.</p>
+
+    <!-- =========================================
+     NEWS & EVENTS PAGE
+========================================= -->
+
+    <main class="news-events-page">
+      <!-- =========================================
+         PAGE HEADING
+    ========================================= -->
+
+      <section class="news-events-heading">
+        <div class="news-section-label">
+          <span>NEWS & EVENTS</span>
+
+          <div class="news-label-line"></div>
+        </div>
+
+        <div class="news-main-heading">
+          <h1>Stay Updated</h1>
+
+          <div class="news-title-line"></div>
+        </div>
+
+        <!-- =========================================
+             FILTER BUTTONS
+        ========================================= -->
+
+        <div class="news-filter-buttons">
+          <button class="news-filter active" data-filter="all">All</button>
+
+          <button class="news-filter" data-filter="event">Events</button>
+
+          <button class="news-filter" data-filter="news">News</button>
+
+          <button class="news-filter" data-filter="announcement">
+            Announcements
+          </button>
+        </div>
+      </section>
+
+      <!-- =========================================
+         NEWS CONTENT
+    ========================================= -->
+
+      <section class="news-content-wrapper">
+        <!-- =========================================
+             FEATURED CONTENT
+        ========================================= -->
+
+        <article
+          class="featured-news-card"
+          id="featuredNewsCard"
+          data-category="event"
+        >
+          <!-- DATE BOX -->
+
+          <div class="featured-date-box">
+            <span class="featured-day" id="featuredDay"> 24 </span>
+
+            <span class="featured-month" id="featuredMonth"> MAY </span>
+          </div>
+
+          <!-- FEATURED IMAGE -->
+
+          <div class="featured-news-image">
+            <img
+              id="featuredImage"
+              src="images/news/heritage-festival.jpg"
+              alt="Thembisile Hani Heritage Festival"
+            />
+          </div>
+
+          <!-- FEATURED CONTENT -->
+
+          <div class="featured-news-content">
+            <span class="featured-category" id="featuredCategory"> EVENT </span>
+
+            <h2 id="featuredTitle">Thembisile Hani Heritage Festival</h2>
+
+            <p id="featuredDescription">
+              A celebration of our culture, music, dance, food and heritage.
+            </p>
+
+            <!-- FEATURED META -->
+
+            <div class="featured-news-bottom">
+              <div class="featured-meta">
+                <div class="featured-meta-item">
+                  <i class="fa-regular fa-calendar-days"></i>
+
+                  <span id="featuredDate"> 24 May 2025 </span>
+                </div>
+
+                <div class="featured-meta-item">
+                  <i class="fa-solid fa-location-dot"></i>
+
+                  <span id="featuredLocation"> KwaMhlanga </span>
+                </div>
+              </div>
+
+              <a href="#" class="featured-view-more" id="featuredViewMore">
+                VIEW MORE
+
+                <span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- =========================================
+             RIGHT SIDE NEWS LIST
+        ========================================= -->
+
+        <div class="news-list" id="newsList">
+          <!-- NEWS ITEM 1 -->
+
+          <article
+            class="news-list-item"
+            data-category="news"
+            data-day="10"
+            data-month="MAY"
+            data-category-name="NEWS"
+            data-title="Tourism SME Workshop"
+            data-description="Empowering locally-owned businesses with skills and resources."
+            data-image="images/news/sme-workshop.jpg"
+            data-date="10 May 2025"
+            data-location="Thembisile Hani"
+          >
+            <div class="news-list-image">
+              <img
+                src="images/news/sme-workshop.jpg"
+                alt="Tourism SME Workshop"
+              />
+            </div>
+
+            <div class="news-small-date">
+              <span>10</span>
+
+              <small>MAY</small>
+            </div>
+
+            <div class="news-list-content">
+              <span>NEWS</span>
+
+              <h3>Tourism SME Workshop</h3>
+
+              <p>
+                Empowering locally-owned businesses with skills and resources.
+              </p>
+
+              <button class="news-read-more">
+                READ MORE
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- EVENT ITEM -->
+
+          <article
+            class="news-list-item"
+            data-category="event"
+            data-day="02"
+            data-month="MAY"
+            data-category-name="EVENT"
+            data-title="Youth in Tourism Imbizo"
+            data-description="Connecting young people with opportunities and career pathways in the tourism sector."
+            data-image="images/news/youth-tourism.jpg"
+            data-date="02 May 2025"
+            data-location="Thembisile Hani"
+          >
+            <div class="news-list-image">
+              <img
+                src="images/news/youth-tourism.jpg"
+                alt="Youth in Tourism Imbizo"
+              />
+            </div>
+
+            <div class="news-small-date">
+              <span>02</span>
+
+              <small>MAY</small>
+            </div>
+
+            <div class="news-list-content">
+              <span>EVENT</span>
+
+              <h3>Youth in Tourism Imbizo</h3>
+
+              <p>
+                Connecting young people with opportunities in the tourism
+                sector.
+              </p>
+
+              <button class="news-read-more">
+                READ MORE
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- NEWS ITEM -->
+
+          <article
+            class="news-list-item"
+            data-category="news"
+            data-day="18"
+            data-month="APR"
+            data-category-name="NEWS"
+            data-title="New Hiking Trail Launched"
+            data-description="Explore a new scenic hiking trail surrounded by the natural beauty of Thembisile Hani."
+            data-image="images/news/hiking-trail.jpg"
+            data-date="18 April 2025"
+            data-location="Thembisile Hani"
+          >
+            <div class="news-list-image">
+              <img src="images/news/hiking-trail.jpg" alt="New Hiking Trail" />
+            </div>
+
+            <div class="news-small-date">
+              <span>18</span>
+
+              <small>APR</small>
+            </div>
+
+            <div class="news-list-content">
+              <span>NEWS</span>
+
+              <h3>New Hiking Trail Launched</h3>
+
+              <p>Explore a new scenic hiking trail in the Thembisile area.</p>
+
+              <button class="news-read-more">
+                READ MORE
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
     </main>
+
+    <!-- =========================================
+     NEWSLETTER CTA
+========================================= -->
+
+    <section class="news-subscribe-cta">
+      <div class="news-subscribe-content">
+        <div class="news-subscribe-icon">
+          <i class="fa-regular fa-envelope"></i>
+        </div>
+
+        <div class="news-subscribe-line"></div>
+
+        <div class="news-subscribe-text">
+          <h2>Don't miss out on upcoming events and opportunities.</h2>
+
+          <p>Subscribe to our newsletter.</p>
+        </div>
+      </div>
+
+      <a href="#" class="news-subscribe-button">
+        SUBSCRIBE NOW
+
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </section>
+
+    <!-- =========================================
+     JAVASCRIPT
+========================================= -->
+
+    <script src="js/script.js"></script>
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+      <div class="footer-main">
+        <!-- FOOTER LOGO -->
+
+        <div class="footer-brand">
+          <img src="images/Footer-logo.png" alt="THLTO Logo" />
+        </div>
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+
+          <div class="footer-link-grid">
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="destinations.html">Destinations</a>
+
+            <a href="news-events.html">News & Events</a>
+
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+
+        <div class="footer-newsletter">
+          <h3>Stay Connected</h3>
+
+          <p>
+            Get the latest tourism news, events and updates from Thembisile
+            Hani.
+          </p>
+
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- FOOTER BOTTOM -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026 THLTO – Thembisile Hani Local Tourism Organisation. All Rights
+          Reserved.
+        </p>
+
+        <div class="footer-policy">
+          <a href="#"> Privacy Policy </a>
+
+          <span>|</span>
+
+          <a href="#"> Terms & Conditions </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

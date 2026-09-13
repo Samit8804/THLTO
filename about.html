@@ -2,55 +2,64 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>About Us | THLTO</title>
 
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
 
   <body>
-    <!-- =========================
-         NAVBAR
-    ========================== -->
+    <!-- ================= NAVBAR ================= -->
 
     <header class="navbar">
-      <a href="index.html" class="logo-container">
-        <img src="images/logo.png" alt="THLTO Logo" class="logo" />
+      <!-- LOGO -->
+
+      <a href="index.html" class="logo">
+        <img
+          src="images/logo.png"
+          alt="THLTO - The Himalayan Local Tourism Organisation"
+        />
       </a>
 
-      <nav class="nav-links">
+      <!-- NAVIGATION -->
+
+      <nav class="nav-menu">
         <a href="index.html">HOME</a>
+
         <a href="about.html" class="active">ABOUT US</a>
+
         <a href="services.html">SERVICES</a>
+
         <a href="destinations.html">DESTINATIONS</a>
+
         <a href="news-events.html">NEWS & EVENTS</a>
+
         <a href="contact.html">CONTACT US</a>
+
+        <a href="contact.html" class="nav-contact-btn"> GET IN TOUCH </a>
       </nav>
 
-      <a href="contact.html" class="nav-button"> GET IN TOUCH </a>
+      <!-- MOBILE MENU BUTTON -->
+
+      <button class="menu-btn" aria-label="Open Menu">☰</button>
     </header>
 
-    <!-- =========================
-         ABOUT HERO SECTION
-    ========================== -->
+    <!-- ================= ABOUT HERO ================= -->
 
-    <main>
-      <section class="about-section">
+    <main class="about-page">
+      <section class="about-hero">
         <!-- LEFT CONTENT -->
 
         <div class="about-content">
           <div class="section-label">
             <span>ABOUT US</span>
-            <div class="small-line"></div>
+            <div class="section-line"></div>
           </div>
 
           <h1>
@@ -58,172 +67,277 @@
             <span class="heading-line"></span>
           </h1>
 
-          <div class="about-text">
-            <p>
-              The Himalayan Local Tourism Organisation (THLTO) is the official
-              destination marketing and tourism development entity for the
-              Himalayan local communities.
-            </p>
+          <p>
+            The Himalayan Local Tourism Organisation (THLTO) is dedicated to
+            promoting sustainable tourism and supporting the growth of local
+            communities across the Himalayan region.
+          </p>
 
-            <p>
-              We are committed to promoting our region as a preferred
-              destination, fostering sustainable tourism growth, supporting
-              local businesses and preserving our rich cultural heritage.
-            </p>
+          <p>
+            We work to position our region as a preferred destination while
+            creating meaningful opportunities for local businesses, preserving
+            cultural heritage and protecting the natural environment.
+          </p>
 
-            <p>
-              Together, we are building a vibrant tourism economy that creates
-              opportunities and improves lives.
-            </p>
-          </div>
+          <p>
+            Together, we are building a vibrant tourism economy that creates
+            opportunities, strengthens communities and improves lives.
+          </p>
         </div>
 
         <!-- RIGHT IMAGE COLLAGE -->
 
         <div class="about-images">
-          <!-- Large Top Image -->
-          <div class="image image-large">
-            <img src="images/hero-image.png" alt="Himalayan Landscape" />
+          <!-- Large Main Image -->
+
+          <div class="about-image about-image-main">
+            <img src="images/hero-image.png" alt="Thembisile Hani Landscape" />
           </div>
 
           <!-- Bottom Left Image -->
-          <div class="image image-waterfall">
-            <img src="images/hero-image.png" alt="Nature" />
+
+          <div class="about-image about-image-left">
+            <img src="images/hero-image.png" alt="Nature and Waterfall" />
           </div>
 
           <!-- Bottom Right Image -->
-          <div class="image image-culture">
+
+          <div class="about-image about-image-right">
             <img src="images/hero-image.png" alt="Local Culture" />
           </div>
         </div>
       </section>
 
-      <!-- =========================
-             MISSION VISION VALUES
-        ========================== -->
+      <!-- ================= MISSION VISION VALUES ================= -->
 
-      <section class="mvv-section">
-        <!-- Mission -->
+      <section class="mission-section">
+        <!-- MISSION -->
 
-        <div class="mvv-card">
-          <div class="mvv-icon">
-            <svg viewBox="0 0 64 64">
-              <circle cx="28" cy="36" r="20"></circle>
-              <circle cx="28" cy="36" r="11"></circle>
-              <circle cx="28" cy="36" r="3"></circle>
-              <path d="M42 22 L58 6"></path>
-              <path d="M49 6 H58 V15"></path>
+        <div class="mission-card">
+          <div class="mission-icon">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 8V5L19 2L20 4L22 5L19 8H16ZM16 8L12 11.9999M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2M17 12C17 14.7614 14.7614 17 12 17C9.23858 17 7 14.7614 7 12C7 9.23858 9.23858 7 12 7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
             </svg>
           </div>
 
-          <div>
+          <div class="mission-text">
             <h3>Our Mission</h3>
 
             <p>
-              To promote sustainable tourism, for the economic development and
-              welfare of local communities growth.
+              To promote sustainable tourism, support economic development and
+              improve the welfare of local communities.
             </p>
           </div>
         </div>
 
-        <!-- Vision -->
+        <!-- VISION -->
 
-        <div class="mvv-card">
-          <div class="mvv-icon">
-            <svg viewBox="0 0 64 64">
-              <path
-                d="M4 32 C14 14, 28 8, 32 8 C36 8, 50 14, 60 32 C50 50, 36 56, 32 56 C28 56, 14 50, 4 32 Z"
-              ></path>
-              <circle cx="32" cy="32" r="9"></circle>
-              <circle cx="32" cy="32" r="3"></circle>
-            </svg>
+        <div class="mission-card">
+          <div class="mission-icon">
+            <i data-lucide="eye"></i>
           </div>
 
-          <div>
+          <div class="mission-text">
             <h3>Our Vision</h3>
 
             <p>
-              To be a leading tourism destination recognised for excellence,
-              heritage and innovation.
+              To become a leading tourism destination recognised for excellence,
+              heritage, sustainability and innovation.
             </p>
           </div>
         </div>
 
-        <!-- Values -->
+        <!-- VALUES -->
 
-        <div class="mvv-card">
-          <div class="mvv-icon">
-            <svg viewBox="0 0 64 64">
-              <path d="M32 4 L60 18 L32 60 L4 18 Z"></path>
-              <path d="M4 18 H60"></path>
-              <path d="M18 18 L32 60 L46 18"></path>
-              <path d="M32 4 V18"></path>
-            </svg>
+        <div class="mission-card">
+          <div class="mission-icon">
+            <i data-lucide="gem"></i>
           </div>
 
-          <div>
+          <div class="mission-text">
             <h3>Our Values</h3>
 
             <p>
-              Integrity, Collaboration, Respect, Excellence, Sustainability and
-              Inclusivity.
+              Integrity, collaboration, respect, excellence, sustainability and
+              inclusivity.
             </p>
           </div>
         </div>
       </section>
 
-      <!-- =========================
-             OBJECTIVES SECTION
-        ========================== -->
+      <!-- ================= OBJECTIVES ================= -->
 
       <section class="objectives-section">
         <div class="objectives-content">
           <h2>Our Objectives</h2>
 
-          <ul>
+          <ul class="objectives-list">
             <li>
-              <span class="check">✓</span>
-              Market Themselves Hike as a top tourism destination
+              <i data-lucide="circle-check"></i>
+
+              <span>
+                Market Thembisile Hani as a leading tourism destination.
+              </span>
             </li>
 
             <li>
-              <span class="check">✓</span>
-              Develop and support sustainable tourism products
+              <i data-lucide="circle-check"></i>
+
+              <span>
+                Develop and support sustainable tourism products and
+                experiences.
+              </span>
             </li>
 
             <li>
-              <span class="check">✓</span>
-              Empower local communities and tourism SMMEs
+              <i data-lucide="circle-check"></i>
+
+              <span>
+                Empower local communities and tourism SMEs through tourism
+                opportunities.
+              </span>
             </li>
 
             <li>
-              <span class="check">✓</span>
-              Preserve and promote our cultural and natural heritage
+              <i data-lucide="circle-check"></i>
+
+              <span>
+                Preserve and promote our cultural and natural heritage.
+              </span>
             </li>
 
             <li>
-              <span class="check">✓</span>
-              Foster partnerships and investment in tourism
+              <i data-lucide="circle-check"></i>
+
+              <span>
+                Foster strategic partnerships and investment in tourism.
+              </span>
             </li>
           </ul>
         </div>
 
-        <!-- Decorative Pattern -->
+        <!-- Decorative Pattern Area -->
 
-        <div class="pattern-area">
-          <div class="pattern pattern-one"></div>
-          <div class="pattern pattern-two"></div>
-          <div class="pattern pattern-three"></div>
-        </div>
+        <div class="objectives-pattern"></div>
       </section>
 
-      <!-- Bottom Border Decoration -->
+      <!-- ================= CTA ================= -->
 
-      <div class="heritage-border">
-        <div class="heritage-pattern"></div>
-      </div>
+      <section class="about-cta">
+        <div class="about-cta-content">
+          <div class="cta-icon">
+            <i data-lucide="mountain"></i>
+          </div>
+
+          <div class="cta-text">
+            <h2>
+              Tourism for Today,
+              <span>Heritage for Tomorrow.</span>
+            </h2>
+
+            <p>
+              Discover our culture, explore our landscapes and support local
+              communities.
+            </p>
+          </div>
+        </div>
+
+        <a href="destinations.html" class="about-cta-button">
+          EXPLORE DESTINATIONS
+          <span>→</span>
+        </a>
+      </section>
     </main>
 
+  <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+      <div class="footer-main">
+        <!-- LOGO -->
+
+        <div class="footer-brand">
+          <img src="images/Footer-logo.png" alt="THLTO" />
+        </div>
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+
+          <div class="footer-link-grid">
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="destinations.html">Destinations</a>
+
+            <a href="news-events.html">News & Events</a>
+
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+
+          <p>Subscribe to get the latest updates, news and tourism trends.</p>
+
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              aria-label="Email Address"
+            />
+
+            <button type="submit">
+              <i data-lucide="send"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- FOOTER BOTTOM -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026 The Himalayan Local Tourism Organisation (THLTO). All Rights
+          Reserved.
+        </p>
+
+        <div class="footer-policy"
+          <a href="#">Privacy Policy</a>
+
+          <span>|</span>
+
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- MAIN JAVASCRIPT -->
+
     <script src="js/script.js"></script>
+
+    <!-- INITIALIZE ICONS -->
+
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>

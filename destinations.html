@@ -2,26 +2,480 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Destinations | THLTO</title>
+
+    <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
   </head>
+
   <body>
+    <!-- =========================================
+         NAVBAR
+    ========================================== -->
+
     <header class="navbar">
-      <a href="index.html" class="logo"
-        ><img src="images/logo.png" alt="THLTO"
-      /></a>
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="THLTO Logo" />
+      </a>
+
       <nav class="nav-menu">
-        <a href="index.html">HOME</a><a href="about.html">ABOUT US</a
-        ><a href="services.html">SERVICES</a
-        ><a href="destinations.html" class="active">DESTINATIONS</a
-        ><a href="news-events.html">NEWS &amp; EVENTS</a
-        ><a href="contact.html">CONTACT US</a>
+        <a href="index.html">HOME</a>
+
+        <a href="about.html">ABOUT US</a>
+
+        <a href="services.html">SERVICES</a>
+
+        <a href="destinations.html" class="active">DESTINATIONS</a>
+
+        <a href="news-events.html">NEWS & EVENTS</a>
+
+        <a href="contact.html">CONTACT US</a>
       </nav>
+
+      <a href="contact.html" class="nav-contact-btn"> GET IN TOUCH </a>
+
+      <button class="menu-btn" aria-label="Open Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
-    <main>
-      <h1>Destinations</h1>
-      <p>Explore the landscapes, culture, and communities of the Himalaya.</p>
+
+    <!-- =========================================
+         DESTINATIONS PAGE
+    ========================================== -->
+
+    <main class="destinations-page">
+      <!-- =========================================
+           PAGE HEADING
+      ========================================== -->
+
+      <section class="destinations-heading">
+        <div class="destination-label">
+          <span>DESTINATIONS</span>
+
+          <div class="destination-label-line"></div>
+        </div>
+
+        <div class="destination-title-row">
+          <h1>Explore Thembisile Hani</h1>
+
+          <div class="destination-title-line"></div>
+        </div>
+      </section>
+
+      <!-- =========================================
+           FILTER BUTTONS
+      ========================================== -->
+
+      <section class="destination-filters">
+        <button class="destination-filter active" data-filter="all">
+          All Destinations
+        </button>
+
+        <button class="destination-filter" data-filter="nature">
+          Nature &amp; Wildlife
+        </button>
+
+        <button class="destination-filter" data-filter="culture">
+          Culture &amp; Heritage
+        </button>
+
+        <button class="destination-filter" data-filter="adventure">
+          Adventure
+        </button>
+
+        <button class="destination-filter" data-filter="local">
+          Local Experiences
+        </button>
+      </section>
+
+      <!-- =========================================
+           DESTINATIONS GRID
+      ========================================== -->
+
+      <section class="destinations-grid">
+        <!-- DESTINATION 1 -->
+
+        <article class="destination-card" data-category="nature">
+          <div class="destination-image">
+            <img src="images/hero-image.png" alt="Nature Destination" />
+          </div>
+
+          <div class="destination-content">
+            <h2>Scenic Natural Landscapes</h2>
+
+            <p>
+              Discover breathtaking landscapes, peaceful surroundings and
+              unforgettable natural beauty.
+            </p>
+
+            <a href="#" class="view-more">
+              EXPLORE
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- DESTINATION 2 -->
+
+        <article class="destination-card" data-category="adventure">
+          <div class="destination-image">
+            <img src="images/hero-image.png" alt="Mountain Destination" />
+          </div>
+
+          <div class="destination-content">
+            <h2>Mountain Adventures</h2>
+
+            <p>
+              Experience exciting outdoor adventures surrounded by incredible
+              mountain scenery.
+            </p>
+
+            <a href="#" class="view-more">
+              EXPLORE
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- DESTINATION 3 -->
+
+        <article class="destination-card" data-category="culture">
+          <div class="destination-image">
+            <img src="images/hero-image.png" alt="Cultural Heritage" />
+          </div>
+
+          <div class="destination-content">
+            <h2>Cultural Heritage</h2>
+
+            <p>
+              Explore the traditions, stories and rich cultural heritage of
+              local communities.
+            </p>
+
+            <a href="#" class="view-more">
+              EXPLORE
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- DESTINATION 4 -->
+
+        <article class="destination-card" data-category="local">
+          <div class="destination-image">
+            <img src="images/hero-image.png" alt="Local Community" />
+          </div>
+
+          <div class="destination-content">
+            <h2>Local Communities</h2>
+
+            <p>
+              Meet welcoming communities and experience authentic local
+              lifestyles and traditions.
+            </p>
+
+            <a href="#" class="view-more">
+              EXPLORE
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- DESTINATION 5 -->
+
+        <article class="destination-card" data-category="adventure">
+          <div class="destination-image">
+            <img src="images/hero-image.png" alt="Adventure Destination" />
+          </div>
+
+          <div class="destination-content">
+            <h2>Adventure Experiences</h2>
+
+            <p>
+              Discover exciting activities and outdoor experiences for every
+              kind of explorer.
+            </p>
+
+            <a href="#" class="view-more">
+              EXPLORE
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- DESTINATION 6 -->
+
+        <article class="destination-card" data-category="culture">
+          <div class="destination-image">
+            <img src="images/hero-image.png" alt="Heritage Destination" />
+          </div>
+
+          <div class="destination-content">
+            <h2>Heritage Sites</h2>
+
+            <p>
+              Visit important heritage locations and discover stories from the
+              past.
+            </p>
+
+            <a href="#" class="view-more">
+              EXPLORE
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- DESTINATION 7 -->
+
+        <article class="destination-card" data-category="nature">
+          <div class="destination-image">
+            <img src="images/hero-image.png" alt="Nature Experience" />
+          </div>
+
+          <div class="destination-content">
+            <h2>Nature Experiences</h2>
+
+            <p>
+              Escape into peaceful environments and reconnect with the beauty of
+              nature.
+            </p>
+
+            <a href="#" class="view-more">
+              EXPLORE
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- DESTINATION 8 -->
+
+        <article class="destination-card" data-category="local">
+          <div class="destination-image">
+            <img src="images/hero-image.png" alt="Village Experience" />
+          </div>
+
+          <div class="destination-content">
+            <h2>Village Experiences</h2>
+
+            <p>
+              Experience authentic hospitality, local traditions and everyday
+              community life.
+            </p>
+
+            <a href="#" class="view-more">
+              EXPLORE
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- DESTINATION 9 -->
+
+        <article class="destination-card" data-category="adventure">
+          <div class="destination-image">
+            <img src="images/hero-image.png" alt="Outdoor Activities" />
+          </div>
+
+          <div class="destination-content">
+            <h2>Outdoor Activities</h2>
+
+            <p>
+              Explore exciting activities designed for visitors who love the
+              outdoors.
+            </p>
+
+            <a href="#" class="view-more">
+              EXPLORE
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- DESTINATION 10 -->
+
+        <article class="destination-card" data-category="culture">
+          <div class="destination-image">
+            <img src="images/hero-image.png" alt="Local Culture" />
+          </div>
+
+          <div class="destination-content">
+            <h2>Local Culture</h2>
+
+            <p>
+              Celebrate the music, traditions, food and culture that make this
+              region unique.
+            </p>
+
+            <a href="#" class="view-more">
+              EXPLORE
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- DESTINATION 11 -->
+
+        <article class="destination-card" data-category="nature">
+          <div class="destination-image">
+            <img src="images/hero-image.png" alt="Hidden Gems" />
+          </div>
+
+          <div class="destination-content">
+            <h2>Hidden Gems</h2>
+
+            <p>
+              Discover unique places and unforgettable experiences away from the
+              ordinary.
+            </p>
+
+            <a href="#" class="view-more">
+              EXPLORE
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- DESTINATION 12 -->
+
+        <article class="destination-card" data-category="local">
+          <div class="destination-image">
+            <img src="images/hero-image.png" alt="Explore Thembisile Hani" />
+          </div>
+
+          <div class="destination-content">
+            <h2>Discover More</h2>
+
+            <p>
+              There is always something new to discover across Thembisile Hani.
+            </p>
+
+            <a href="#" class="view-more">
+              EXPLORE
+              <span>→</span>
+            </a>
+          </div>
+        </article>
+      </section>
     </main>
+
+    <!-- =========================================
+         DESTINATION CTA
+    ========================================== -->
+
+    <section class="destination-cta">
+      <div class="destination-cta-content">
+        <div class="destination-cta-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+
+        <div class="destination-cta-divider"></div>
+
+        <div class="destination-cta-text">
+          <h2>
+            Plan Your Trip to
+            <span>Thembisile Hani Today</span>
+          </h2>
+
+          <p>
+            Discover
+            <span>•</span>
+            Experience
+            <span>•</span>
+            Celebrate
+          </p>
+        </div>
+      </div>
+
+      <a href="#" class="view-all-destinations">
+        VIEW ALL DESTINATIONS
+
+        <span>→</span>
+      </a>
+    </section>
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="footer">
+      <div class="footer-main">
+        <!-- FOOTER LOGO -->
+
+        <div class="footer-brand">
+          <img src="images/Footer-logo.png" alt="THLTO Logo" />
+        </div>
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+
+          <div class="footer-link-grid">
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="destinations.html">Destinations</a>
+
+            <a href="news-events.html">News & Events</a>
+
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+
+        <div class="footer-newsletter">
+          <h3>Stay Connected</h3>
+
+          <p>
+            Get the latest tourism news, events and updates from Thembisile
+            Hani.
+          </p>
+
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+
+            <button type="submit">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- FOOTER BOTTOM -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026 THLTO – Thembisile Hani Local Tourism Organisation. All Rights
+          Reserved.
+        </p>
+
+        <div class="footer-policy">
+          <a href="#"> Privacy Policy </a>
+
+          <span>|</span>
+
+          <a href="#"> Terms & Conditions </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="js/script.js"></script>
   </body>
 </html>

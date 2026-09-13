@@ -3,25 +3,309 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Contact Us | THLTO</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
+
   <body>
-    <header class="navbar">
-      <a href="index.html" class="logo"
-        ><img src="images/logo.png" alt="THLTO"
-      /></a>
-      <nav class="nav-menu">
-        <a href="index.html">HOME</a><a href="about.html">ABOUT US</a
-        ><a href="services.html">SERVICES</a
-        ><a href="destinations.html">DESTINATIONS</a
-        ><a href="news-events.html">NEWS &amp; EVENTS</a
-        ><a href="contact.html" class="active">CONTACT US</a>
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+      <div class="logo-area">
+        <a href="index.html" class="logo-link">
+          <img src="images/logo.png" alt="THLTO Logo" class="header-logo" />
+        </a>
+      </div>
+
+      <nav class="navigation">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="services.html">SERVICES</a>
+        <a href="destinations.html">DESTINATIONS</a>
+        <a href="news-events.html">NEWS &amp; EVENTS</a>
+
+        <a href="#" class="active">CONTACT US</a>
       </nav>
+
+      <a href="#contact-form" class="header-button"> GET IN TOUCH </a>
+
+      <button class="mobile-menu" id="mobileMenu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
-    <main>
-      <h1>Contact THLTO</h1>
-      <p>Get in touch to plan a meaningful Himalayan experience.</p>
-    </main>
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact-section">
+      <div class="contact-grid">
+        <!-- LEFT CONTACT INFORMATION -->
+
+        <div class="contact-info">
+          <div class="section-label">
+            CONTACT US
+            <span></span>
+          </div>
+
+          <div class="title-row">
+            <h1>Get In Touch</h1>
+            <span></span>
+          </div>
+
+          <p class="intro-text">
+            We’d love to hear from you. Whether you’re a visitor, partner or
+            local business, feel free to contact us.
+          </p>
+
+          <!-- ADDRESS -->
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+
+            <div class="info-content">
+              <h4>Address</h4>
+
+              <p>
+                35 Vikas Street, eMhlavini (Mthathi),<br />
+                Mpumalanga, 1039
+              </p>
+            </div>
+          </div>
+
+          <!-- PHONE -->
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+
+            <div class="info-content">
+              <h4>Phone</h4>
+
+              <p>+27 73 661 8890</p>
+            </div>
+          </div>
+
+          <!-- EMAIL -->
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="info-content">
+              <h4>Email</h4>
+
+              <p>info@thlto.org.za</p>
+            </div>
+          </div>
+
+          <!-- OFFICE HOURS -->
+
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fa-regular fa-clock"></i>
+            </div>
+
+            <div class="info-content">
+              <h4>Office Hours</h4>
+
+              <p>Monday - Friday 08:00 - 16:30</p>
+            </div>
+          </div>
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="follow-title">Follow Us</div>
+
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ================= CONTACT FORM ================= -->
+
+        <div class="contact-form" id="contact-form">
+          <form id="contactForm">
+            <div class="form-group">
+              <i class="fa-regular fa-user"></i>
+
+              <input type="text" name="name" placeholder="Full Name" required />
+            </div>
+
+            <div class="form-group">
+              <i class="fa-regular fa-envelope"></i>
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <i class="fa-solid fa-phone"></i>
+
+              <input type="tel" name="phone" placeholder="Phone Number" />
+            </div>
+
+            <div class="form-group select-group">
+              <select name="service">
+                <option value="">How can we help you?</option>
+
+                <option value="tourism">Tourism Information</option>
+
+                <option value="partnership">Partnership</option>
+
+                <option value="business">Local Business</option>
+
+                <option value="general">General Enquiry</option>
+              </select>
+
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <div class="form-group textarea-group">
+              <i class="fa-regular fa-message"></i>
+
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">
+              SEND MESSAGE
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- ================= MAP ================= -->
+
+        <div class="map-container">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=30.85%2C-25.45%2C31.25%2C-25.10&layer=mapnik"
+            loading="lazy"
+          >
+          </iframe>
+
+          <div class="map-card">
+            <div class="map-card-title">
+              <i class="fa-solid fa-location-dot"></i>
+
+              <span>Visit Us</span>
+            </div>
+
+            <p>We are located in the heart of Thembisile Hani Municipality.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+      <div class="footer-main">
+        <!-- FOOTER LOGO -->
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/Footer-logo.png" alt="THLTO Footer Logo" />
+          </div>
+        </div>
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+          </div>
+
+          <div class="footer-column">
+            <h3>&nbsp;</h3>
+
+            <a href="#">Destinations</a>
+            <a href="#">News &amp; Events</a>
+            <a href="#">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+
+          <p>Subscribe to get the latest updates, news and tourism news.</p>
+
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required />
+
+            <button type="submit">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- FOOTER BOTTOM -->
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          © 2025 Thembisile Hani Local Tourism Organisation (THLTO). All Rights
+          Reserved.
+        </div>
+
+        <div class="legal-links">
+          <a href="#">Privacy Policy</a>
+
+          <span>|</span>
+
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
   </body>
 </html>
