@@ -8,17 +8,20 @@ document.addEventListener("DOMContentLoaded", () => {
      MOBILE NAVIGATION
   ========================================= */
 
-  const menuButton = document.querySelector(".menu-btn");
-  const navMenu = document.querySelector(".nav-menu");
+  const menuButton = document.querySelector(".menu-btn, .mobile-menu");
+  const navMenu = document.querySelector(".nav-menu, .navigation");
+  const menuClass = navMenu?.classList.contains("navigation")
+    ? "mobile-navigation"
+    : "show-menu";
 
   if (menuButton && navMenu) {
     menuButton.addEventListener("click", () => {
-      navMenu.classList.toggle("show-menu");
+      navMenu.classList.toggle(menuClass);
 
       const icon = menuButton.querySelector("i");
 
       if (icon) {
-        if (navMenu.classList.contains("show-menu")) {
+        if (navMenu.classList.contains(menuClass)) {
           icon.classList.remove("fa-bars");
           icon.classList.add("fa-xmark");
         } else {
@@ -34,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
-        navMenu.classList.remove("show-menu");
+        navMenu.classList.remove(menuClass);
 
         const icon = menuButton.querySelector("i");
 
@@ -277,13 +280,3 @@ if (newsletterForm) {
     newsletterForm.reset();
   });
 }
-
-/* =========================
-   CLOSE MOBILE MENU
-========================= */
-
-document.querySelectorAll(".navigation a").forEach(function (link) {
-  link.addEventListener("click", function () {
-    navigation.classList.remove("mobile-navigation");
-  });
-});

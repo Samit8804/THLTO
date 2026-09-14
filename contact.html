@@ -27,14 +27,12 @@
   <body>
     <!-- ================= HEADER ================= -->
 
-    <header class="header">
-      <div class="logo-area">
-        <a href="index.html" class="logo-link">
-          <img src="images/logo.png" alt="THLTO Logo" class="header-logo" />
-        </a>
-      </div>
+    <header class="navbar">
+      <a href="index.html" class="logo">
+        <img src="images/Headerlogo.png" alt="THLTO Logo" />
+      </a>
 
-      <nav class="navigation">
+      <nav class="nav-menu">
         <a href="index.html">HOME</a>
         <a href="about.html">ABOUT US</a>
         <a href="services.html">SERVICES</a>
@@ -42,11 +40,15 @@
         <a href="news-events.html">NEWS &amp; EVENTS</a>
 
         <a href="#" class="active">CONTACT US</a>
+
+        <a href="#contact-form" class="nav-contact-btn"> GET IN TOUCH </a>
       </nav>
 
-      <a href="#contact-form" class="header-button"> GET IN TOUCH </a>
-
-      <button class="mobile-menu" id="mobileMenu">
+      <button
+        class="menu-btn"
+        id="mobileMenu"
+        aria-label="Open navigation menu"
+      >
         <i class="fa-solid fa-bars"></i>
       </button>
     </header>
@@ -84,8 +86,8 @@
               <h4>Address</h4>
 
               <p>
-                35 Vikas Street, eMhlavini (Mthathi),<br />
-                Mpumalanga, 1039
+                Stand No 24 Kwaggafontein C ( Front opposite police station ),
+                Empumalanga, 0458
               </p>
             </div>
           </div>
@@ -100,7 +102,7 @@
             <div class="info-content">
               <h4>Phone</h4>
 
-              <p>+27 73 661 8890</p>
+              <p>013 986 9505</p>
             </div>
           </div>
 
@@ -114,7 +116,7 @@
             <div class="info-content">
               <h4>Email</h4>
 
-              <p>info@thlto.org.za</p>
+              <p>tourism@thembisilehanilm.gov.za</p>
             </div>
           </div>
 
@@ -219,7 +221,8 @@
 
         <div class="map-container">
           <iframe
-            src="https://www.openstreetmap.org/export/embed.html?bbox=30.85%2C-25.45%2C31.25%2C-25.10&layer=mapnik"
+            src="https://www.google.com/maps?q=Stand%20No%2024%20Kwaggafontein%20C%20(Empumalanga)%200458%20South%20Africa&output=embed"
+            title="Map showing the THLTO office at Stand No 24 Kwaggafontein C, Empumalanga"
             loading="lazy"
           >
           </iframe>
@@ -245,7 +248,7 @@
 
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="images/Footer-logo.png" alt="THLTO Footer Logo" />
+            <img src="images/Footerlogo.png" alt="THLTO Footer Logo" />
           </div>
         </div>
 
@@ -306,6 +309,6 @@
 
     <!-- JavaScript -->
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
