@@ -15,19 +15,41 @@ document.addEventListener("DOMContentLoaded", () => {
     : "show-menu";
 
   if (menuButton && navMenu) {
-    menuButton.addEventListener("click", () => {
-      navMenu.classList.toggle(menuClass);
+    const setMenuState = (isOpen) => {
+      navMenu.classList.toggle(menuClass, isOpen);
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+      menuButton.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu",
+      );
 
       const icon = menuButton.querySelector("i");
 
       if (icon) {
-        if (navMenu.classList.contains(menuClass)) {
-          icon.classList.remove("fa-bars");
-          icon.classList.add("fa-xmark");
-        } else {
-          icon.classList.remove("fa-xmark");
-          icon.classList.add("fa-bars");
-        }
+        icon.classList.toggle("fa-bars", !isOpen);
+        icon.classList.toggle("fa-xmark", isOpen);
+      }
+    };
+
+    setMenuState(false);
+
+    menuButton.addEventListener("click", () => {
+      setMenuState(!navMenu.classList.contains(menuClass));
+    });
+
+    document.addEventListener("click", (event) => {
+      if (
+        navMenu.classList.contains(menuClass) &&
+        !navMenu.contains(event.target) &&
+        !menuButton.contains(event.target)
+      ) {
+        setMenuState(false);
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        setMenuState(false);
       }
     });
 
@@ -37,14 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
-        navMenu.classList.remove(menuClass);
-
-        const icon = menuButton.querySelector("i");
-
-        if (icon) {
-          icon.classList.remove("fa-xmark");
-          icon.classList.add("fa-bars");
-        }
+        setMenuState(false);
       });
     });
   }

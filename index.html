@@ -568,7 +568,9 @@
     <!-- INITIALIZE ICONS -->
 
     <script>
-      lucide.createIcons();
+      if (window.lucide) {
+        lucide.createIcons();
+      }
     </script>
   </body>
 </html>
